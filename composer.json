@@ -1,0 +1,23 @@
+{
+    "name": "nuffy/bri-lib",
+    "description": "Parses BRI files",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NuffZetPand0ra",
+            "email": "esbentind@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+    },
+    "require-dev": {
+        "ulrichsg/getopt-php": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "nuffy\\BriLib\\": "src"
+        }
+    }
+}
