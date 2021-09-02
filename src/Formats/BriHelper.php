@@ -4,7 +4,7 @@ namespace nuffy\BriLib\Formats;
 use Exception;
 use nuffy\cards\{CardCollection, Deck, DeckException, DeckFactory};
 use nuffy\cards\Card\CardFactory;
-use nuffy\BriLib\Bridge\Board;
+use nuffy\BriLib\Bridge\{Board, BoardCollection};
 use nuffy\cards\Card\CardException;
 
 class BriHelper
@@ -60,17 +60,17 @@ class BriHelper
 
     /**
      * 
-     * @param Board[] $boards 
+     * @param BoardCollection $boards 
      * @param string $outuput_dest 
      * @return void 
      */
-    public static function saveBoardsToFile(array $boards, string $outuput_dest) : void
+    public static function saveBoardsToFile(BoardCollection $boards, string $outuput_dest) : void
     {
         $file = fopen($outuput_dest, 'w+');
         fwrite($file, self::getStringFromBoards($boards));
     }
 
-    public static function getStringFromBoards(array $boards) : string
+    public static function getStringFromBoards(BoardCollection $boards) : string
     {
         $str = "";
         foreach($boards as $board){

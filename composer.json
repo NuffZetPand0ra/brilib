@@ -13,7 +13,8 @@
     "prefer-stable":true,
     "require": {
         "php": "^8.0",
-        "nuffy/cards": "dev-master"
+        "nuffy/cards": "dev-master",
+        "doctrine/collections": "^1.6"
     },
     "require-dev": {
         "ulrichsg/getopt-php": "^4.0"

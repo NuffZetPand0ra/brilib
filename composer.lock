@@ -4,20 +4,89 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "274e3d001a4c42c44e4ee68688df68dc",
+    "content-hash": "af54bb7ec24669ea62a405a5267a0588",
     "packages": [
+        {
+            "name": "doctrine/collections",
+            "version": "1.6.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/collections.git",
+                "reference": "1958a744696c6bb3bb0d28db2611dc11610e78af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/1958a744696c6bb3bb0d28db2611dc11610e78af",
+                "reference": "1958a744696c6bb3bb0d28db2611dc11610e78af",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^9.0",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.1.5",
+                "vimeo/psalm": "^4.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Collections\\": "lib/Doctrine/Common/Collections"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "PHP Doctrine Collections library that adds additional functionality on top of PHP arrays.",
+            "homepage": "https://www.doctrine-project.org/projects/collections.html",
+            "keywords": [
+                "array",
+                "collections",
+                "iterators",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/collections/issues",
+                "source": "https://github.com/doctrine/collections/tree/1.6.8"
+            },
+            "time": "2021-08-10T18:51:53+00:00"
+        },
         {
             "name": "nuffy/cards",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NuffZetPand0ra/cards.git",
-                "reference": "112a9c069e84c9fe91e83106ed812923e10e05e8"
+                "reference": "e0a9037f917cb41d2420ad24aad7ccd72086c74e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NuffZetPand0ra/cards/zipball/112a9c069e84c9fe91e83106ed812923e10e05e8",
-                "reference": "112a9c069e84c9fe91e83106ed812923e10e05e8",
+                "url": "https://api.github.com/repos/NuffZetPand0ra/cards/zipball/e0a9037f917cb41d2420ad24aad7ccd72086c74e",
+                "reference": "e0a9037f917cb41d2420ad24aad7ccd72086c74e",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +114,7 @@
                 "issues": "https://github.com/NuffZetPand0ra/cards/issues",
                 "source": "https://github.com/NuffZetPand0ra/cards/tree/master"
             },
-            "time": "2021-09-02T19:04:37+00:00"
+            "time": "2021-09-02T20:06:50+00:00"
         }
     ],
     "packages-dev": [
