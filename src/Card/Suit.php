@@ -1,10 +1,9 @@
 <?php
 namespace nuffy\BriLib\Card;
 
+/** @package nuffy\BriLib\Card */
 class Suit
 {
-    protected $suit;
-
     public const SUITS = [
         "C",
         "D",
@@ -19,8 +18,16 @@ class Suit
         "S"=>"♤"
     ];
 
-    public function __construct(string $suit)
-    {
+    /**
+     * Creates new suit
+     * 
+     * @param string $suit Must be string from Suit::SUITS
+     * @return void 
+     * @throws CardException 
+     */
+    public function __construct(
+        protected string $suit
+    ){
         $suit = strtoupper($suit);
         if(!in_array($suit, self::SUITS)) throw new CardException("$suit is not a valid suit");
         $this->suit = $suit;

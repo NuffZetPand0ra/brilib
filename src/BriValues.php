@@ -1,6 +1,7 @@
 <?php
 namespace nuffy\BriLib;
 
+/** @package nuffy\BriLib */
 class BriValues
 {
     public const MAP = [

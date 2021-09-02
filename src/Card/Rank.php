@@ -1,10 +1,9 @@
 <?php
 namespace nuffy\BriLib\Card;
 
+/** @package nuffy\BriLib\Card */
 class Rank
 {
-    protected $rank;
-
     public const RANKS = [
         "2",
         "3",
@@ -21,8 +20,16 @@ class Rank
         "A",
     ];
 
-    public function __construct(string $rank)
-    {
+    /**
+     * Creates new rank
+     * 
+     * @param string $rank Must be string from Rank::RANKS
+     * @return void 
+     * @throws CardException 
+     */
+    public function __construct(
+        protected string $rank
+    ){
         $rank = strtoupper($rank);
         if(!in_array($rank, self::RANKS)) throw new CardException("$rank is not a valid rank");
         $this->rank = $rank;

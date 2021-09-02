@@ -1,8 +1,16 @@
 <?php
 namespace nuffy\BriLib\Card;
 
+/** @package nuffy\BriLib\Card */
 class CardFactory
 {
+    /**
+     * Creates card from string
+     * 
+     * @param string $card Two-letter string containing rank and suit, i.e. TS for ten of spades
+     * @return Card 
+     * @throws CardException 
+     */
     public static function createFromString(string $card) : Card
     {
         try{

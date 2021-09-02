@@ -11,6 +11,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
+        "php": "^8.0"
     },
     "require-dev": {
         "ulrichsg/getopt-php": "^4.0"

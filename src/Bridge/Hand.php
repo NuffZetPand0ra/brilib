@@ -1,9 +1,9 @@
 <?php
 namespace nuffy\BriLib\Bridge;
 
-use nuffy\BriLib\Deck;
+use nuffy\BriLib\CardCollection;
 
-class Hand extends Deck
+class Hand extends CardCollection
 {
     
 }
