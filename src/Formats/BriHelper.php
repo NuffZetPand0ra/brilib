@@ -1,8 +1,8 @@
 <?php
-namespace nuffy\BriLib;
+namespace nuffy\BriLib\Formats;
 
 use Exception;
-use nuffy\cards\{Deck, DeckException, DeckFactory};
+use nuffy\cards\{CardCollection, Deck, DeckException, DeckFactory};
 use nuffy\cards\Card\CardFactory;
 use nuffy\BriLib\Bridge\Board;
 use nuffy\cards\Card\CardException;
@@ -56,5 +56,40 @@ class BriHelper
             $boards[] = $board;
         }
         return $boards;
+    }
+
+    /**
+     * 
+     * @param Board[] $boards 
+     * @param string $outuput_dest 
+     * @return void 
+     */
+    public static function saveBoardsToFile(array $boards, string $outuput_dest) : void
+    {
+        $file = fopen($outuput_dest, 'w+');
+        fwrite($file, self::getStringFromBoards($boards));
+    }
+
+    public static function getStringFromBoards(array $boards) : string
+    {
+        $str = "";
+        foreach($boards as $board){
+            $str .= self::getStringFromBoard($board);
+        }
+        return $str;
+    }
+
+    public static function getStringFromBoard(Board $board) : string
+    {
+        $card_strings = [];
+        foreach(['N', 'E', 'S'] as $hand_name){
+            $hand_strings = [];
+            foreach($board->getHand($hand_name)->getRemainingCards() as $card){
+                $hand_strings[] = (string)array_search($card->getRank().$card->getSuit(), BriValues::MAP);
+            }
+            sort($hand_strings);
+            $card_strings = array_merge($card_strings, $hand_strings);
+        }
+        return implode('', $card_strings).str_repeat(' ', 32).str_repeat("\000", 18);
     }
 }

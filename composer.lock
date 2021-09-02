@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NuffZetPand0ra/cards.git",
-                "reference": "2bdead8257797325680e862aa26334b8c4f7e5b9"
+                "reference": "112a9c069e84c9fe91e83106ed812923e10e05e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NuffZetPand0ra/cards/zipball/2bdead8257797325680e862aa26334b8c4f7e5b9",
-                "reference": "2bdead8257797325680e862aa26334b8c4f7e5b9",
+                "url": "https://api.github.com/repos/NuffZetPand0ra/cards/zipball/112a9c069e84c9fe91e83106ed812923e10e05e8",
+                "reference": "112a9c069e84c9fe91e83106ed812923e10e05e8",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 "issues": "https://github.com/NuffZetPand0ra/cards/issues",
                 "source": "https://github.com/NuffZetPand0ra/cards/tree/master"
             },
-            "time": "2021-09-02T10:41:39+00:00"
+            "time": "2021-09-02T19:04:37+00:00"
         }
     ],
     "packages-dev": [

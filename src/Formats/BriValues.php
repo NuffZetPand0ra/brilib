@@ -1,7 +1,7 @@
 <?php
-namespace nuffy\BriLib;
+namespace nuffy\BriLib\Formats;
 
-/** @package nuffy\BriLib */
+/** @package nuffy\BriLib\Formats */
 class BriValues
 {
     public const MAP = [
