@@ -4,8 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "39dce4305c21f97a1291affe6779ac5e",
-    "packages": [],
+    "content-hash": "274e3d001a4c42c44e4ee68688df68dc",
+    "packages": [
+        {
+            "name": "nuffy/cards",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NuffZetPand0ra/cards.git",
+                "reference": "2bdead8257797325680e862aa26334b8c4f7e5b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NuffZetPand0ra/cards/zipball/2bdead8257797325680e862aa26334b8c4f7e5b9",
+                "reference": "2bdead8257797325680e862aa26334b8c4f7e5b9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "nuffy\\cards\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "NuffZetPand0ra",
+                    "email": "esbentind@gmail.com"
+                }
+            ],
+            "description": "Abstraction layer for playing cards",
+            "support": {
+                "issues": "https://github.com/NuffZetPand0ra/cards/issues",
+                "source": "https://github.com/NuffZetPand0ra/cards/tree/master"
+            },
+            "time": "2021-09-02T10:41:39+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "ulrichsg/getopt-php",
@@ -59,9 +101,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "nuffy/cards": 20
+    },
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.0"

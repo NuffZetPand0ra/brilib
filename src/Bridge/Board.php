@@ -1,6 +1,11 @@
 <?php
 namespace nuffy\BriLib\Bridge;
 
+/**
+ * Bridge board containing four hands of cards
+ * 
+ * @package nuffy\BriLib\Bridge
+ */
 class Board
 {
     /**
@@ -18,9 +23,10 @@ class Board
     /**
      * Creates a new board
      * 
+     * @param int $board_number Board number, defaults to none (0)
      * @return void 
      */
-    function __construct()
+    function __construct(protected int $board_number = 0)
     {
         foreach($this->hands as &$hand){
             $hand = new Hand();
@@ -46,6 +52,8 @@ class Board
      */
     public function getHand(string $hand_name) : Hand
     {
+        if(!isset($this->hands[$hand_name])) throw new \Exception("No hand with name $hand_name.");
+        
         return $this->hands[$hand_name];
     }
 
@@ -87,6 +95,16 @@ class Board
     public function getWest() : Hand
     {
         return $this->getHand('W');
+    }
+
+    /**
+     * Gets board number of board
+     * 
+     * @return int 
+     */
+    public function getBoardNumber() : int
+    {
+        return $this->board_number;
     }
 
     public function __toString() : string

@@ -1,7 +1,7 @@
 <?php
 namespace nuffy\BriLib\Bridge;
 
-use nuffy\BriLib\CardCollection;
+use nuffy\cards\CardCollection;
 
 class Hand extends CardCollection
 {

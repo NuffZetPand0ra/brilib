@@ -9,9 +9,11 @@
             "email": "esbentind@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability":"dev",
+    "prefer-stable":true,
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "nuffy/cards": "dev-master"
     },
     "require-dev": {
         "ulrichsg/getopt-php": "^4.0"
