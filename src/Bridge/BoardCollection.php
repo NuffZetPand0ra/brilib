@@ -10,6 +10,11 @@ use nuffy\BriLib\Bridge\Board;
 class BoardCollection extends ArrayCollection
 {
     /**
+     * @var Board[]
+     */
+    private $elements;
+
+    /**
      * 
      * @param Board $element 
      * @return true 
